@@ -1,104 +1,110 @@
 body{
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Arial, sans-serif, Helvetica;
     margin: 0px;
     font-size: 1.5vw;
 }
-
-#logo{
-    margin: 0px;
-    padding: 8px;
-    font-family: "Fredoka One", sans-serif;
-    width: 16%;
-    text-shadow: 
-    1px 1px 0px black,
-    -1px 1px 0px black,
-    1px -1px 0px black,
-    -1px -1px 0px black;
-}
-
-ul{
-    margin: 0px;
-}
-
-body > header {
-    background-color: orange;
-    color: white;
+body > header{
+    background-color: darkblue;
     display: flex;
-    height: 12vh;
-    align-items: center;
+    color: yellow;
     justify-content: space-around;
 }
 
-#nav-ul {
-    display: flex;
+body > header > h1{
+    padding-top: 5px;
 }
 
-#nav-ul > li{
+body > header > nav > ul{
+    display: flex;
+    list-style-type: none;
+    padding-top: 20px;
+}
+.navbutton{
     padding: 8px;
     margin: 16px;
-}
-
-body > header > nav > ul {
-    list-style: none;
     text-decoration: none;
-}
-
-.navbutton{
-    color: white;
-    text-decoration: none;
-    padding: 12px;
-    border: 1px solid white;
+    color: yellow;
+    border: 1px solid yellow;
     border-radius: 10%;
-} 
-
-body > main article{
-    width: 70%;
-    margin: auto;
 }
-/* no > means not direct descendant */
+
+.profile_pics{
+    border-radius: 100%;
+}
 
 #main-content {
     display: flex;
     justify-content: space-around;
-}
-
-#main-content > div {
-    width: 70%;
+    align-items: stretch;
 }
 
 #main-content >aside {
-    width: 20%;
+    padding: 20px;
 }
+
+.profiles{
+    display: flex;
+    justify-content: space-around;
+}
+
+.profiles > ul{
+    list-style-type: none;
+}
+
+.profiles > ul > li{
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 10px;
+    border: 1px solid;
+}
+
+.separator {
+    width: 1px;
+    background-color: black;
+    margin: 0 10px;
+    height: auto;
+    align-self: stretch;
+}
+
+
 
 form {
     text-align: center;
 }
 
-h2 {
+#form_title{
     text-align: center;
 }
 
+
+
 body > footer {
-    background-color: orange;
+    background-color: darkblue;
     display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
-img {
-    border-radius: 100%;
+body > footer > h2{
+    color: yellow;
+    padding-top: 5px;
 }
 
-#footer-ul {
+body > footer > ul{
     display: flex;
-    list-style: none;
+    list-style-type: none;
 }
 
-#footer-ul > div > li{
-    margin-left: 12px;
+body > footer > ul > li {
+    padding: 8px;
+    border: 1px solid yellow;
+    border-radius: 10%;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
-#footer-ul > div > li > a {
+body > footer > ul > li > a{
     text-decoration: none;
-    color: white;
+    color: yellow;
 }
-
-/* class="" or id="" in html allow you to target specific parts, id should be unique, and use .name or #name respectively to target them */
