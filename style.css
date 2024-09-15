@@ -108,3 +108,19 @@ body > footer > ul > li > a{
     text-decoration: none;
     color: yellow;
 }
+
+@keyframes slideUp{
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body {
+    opacity: 0;
+    animation: slideUp 3s ease forwards;
+}
